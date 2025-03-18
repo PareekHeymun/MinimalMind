@@ -1,0 +1,2 @@
+# MinimalMind
+Team Project
