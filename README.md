@@ -1,8 +1,8 @@
 # MinimalMind
 ### Team Project
--
+
 ### Target
-> Create a minimalistic focus app
+#### Create a minimalistic focus app
 
 ### Goals
 1. Real time clock update
