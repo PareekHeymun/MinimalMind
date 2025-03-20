@@ -14,5 +14,8 @@
 ### Languages used:
 1. Java
 2. Kotlin
+
+### Instructions
 - One can use any comfortable language. Both MainActivity.java and MainActivity.kt are available
+- Create a raw folder within the ***res*** folder in **ANDROID STUDIO**
 
