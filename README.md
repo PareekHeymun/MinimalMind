@@ -2,7 +2,7 @@
 ### Team Project
 
 ### Target
-#### Create a minimalistic focus app
+  To create a minimalistic focus app
 
 ### Goals
 1. Real time clock update
