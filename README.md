@@ -14,5 +14,5 @@
 ### Languages used:
 1. Java
 2. Kotlin
-One can use any comfortable language. Both MainActivity.java and MainActivity.kt are available
+- One can use any comfortable language. Both MainActivity.java and MainActivity.kt are available
 
