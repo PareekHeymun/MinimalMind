@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="built_in_songs">
+        <item>song1</item>
+        <item>song2</item>
+        <item>song3</item>
+        <item>song4</item>
+        <item>song5</item>
+    </string-array>
+</resources>
