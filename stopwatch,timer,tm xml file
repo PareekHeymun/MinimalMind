@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/clockLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MinimalMind Clock"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="start"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Mode:"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="start" />
+
+    <RadioGroup
+        android:id="@+id/modeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/stopwatchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stopwatch"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/timerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginEnd="16dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/startPauseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="56dp"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:background="#00796B"
+            android:padding="10dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="56dp"
+            android:text="Reset"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="77dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MinimalMind Task Manager"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/taskInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a new task"
+        android:textColor="#FFFFFF"
+        android:background="#333333"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="56dp"
+            android:text="Add Task"
+            android:textColor="#FFFFFF"
+            android:background="#008577"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/resetTaskListButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="56dp"
+            android:text="Reset Tasks"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/productivityScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:paddingTop="16dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/taskList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="16dp" />
+</LinearLayout>
