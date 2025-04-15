@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.a1group9.myapplication"
-    compileSdk = 34  // Changed to stable version (35 is not officially released yet)
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.a1group9.myapplication"
         minSdk = 24
-        targetSdk = 34  // Changed to match compileSdk
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -25,33 +25,18 @@ android {
             )
         }
     }
-
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-
-    sourceSets {
-        getByName("main") {
-            assets {
-                srcDirs("src/main/assets")  // Simplified directory structure
-            }
-        }
-    }
 }
 
 dependencies {
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-
-    // Add RecyclerView dependency (if using previous music list implementation)
-    implementation(libs.androidx.recyclerview)
-
-    // MediaPlayer ExoPlayer (optional for better audio handling)
-    // implementation(libs.androidx.media3.exoplayer)
-
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
